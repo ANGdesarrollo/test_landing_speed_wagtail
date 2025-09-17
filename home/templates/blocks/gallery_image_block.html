@@ -1,0 +1,10 @@
+<div class="gallery-item">
+    {% if value.image %}
+        <img src="{{ value.image.url }}" alt="{{ value.caption|default:'Gallery image' }}" loading="lazy">
+    {% else %}
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Gallery image" loading="lazy">
+    {% endif %}
+    <div class="gallery-overlay">
+        <button class="view-btn">View</button>
+    </div>
+</div>
